@@ -4,77 +4,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="MainActivity">
-
-    <LinearLayout
+    tools:context="MainActivity"
+    android:orientation="horizontal">
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/botones"
+            android:orientation="vertical">
 
-        <Button
-            android:id="@+id/sonido1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="sonido"
-            android:tag="0"
-            android:text="INFLAR"
-            tools:layout_editor_absoluteX="16dp"
-            tools:layout_editor_absoluteY="16dp" />
-
-        <Button
-            android:id="@+id/sonido2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="sonido"
-            android:tag="1"
-            android:text="MEMOCIONO"
-            tools:layout_editor_absoluteX="5dp"
-            tools:layout_editor_absoluteY="5dp" />
-        <Button
-            android:id="@+id/sonido3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="sonido"
-            android:tag="2"
-            android:text="OH MA GAWD"
-            tools:layout_editor_absoluteX="5dp"
-            tools:layout_editor_absoluteY="5dp" />
-        <Button
-            android:id="@+id/sonido4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="sonido"
-            android:tag="3"
-            android:text="BITESDEDUST"
-            tools:layout_editor_absoluteX="5dp"
-            tools:layout_editor_absoluteY="5dp" />
-        <Button
-            android:id="@+id/sonido5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="sonido"
-            android:tag="4"
-            android:text="YA ESTÁ BIEN"
-            tools:layout_editor_absoluteX="5dp"
-            tools:layout_editor_absoluteY="5dp" />
-        <Button
-            android:id="@+id/sonido6"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="sonido"
-            android:tag="5"
-            android:text="NOTTE"
-            tools:layout_editor_absoluteX="5dp"
-            tools:layout_editor_absoluteY="5dp" />
-        <Button
-            android:id="@+id/sonido7"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:onClick="sonido"
-            android:tag="6"
-            android:text="AL CARRER"
-            tools:layout_editor_absoluteX="5dp"
-            tools:layout_editor_absoluteY="5dp" />
-    </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
 
 </android.support.constraint.ConstraintLayout>
